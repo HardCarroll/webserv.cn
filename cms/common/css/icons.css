@@ -1,30 +1,30 @@
 @font-face {
   font-family: 'icocuz';
-  src:  url('./fonts/icocuz.eot?2r9drd');
-  src:  url('./fonts/icocuz.eot?2r9drd#iefix') format('embedded-opentype'),
-    url('./fonts/icocuz.ttf?2r9drd') format('truetype'),
-    url('./fonts/icocuz.woff?2r9drd') format('woff'),
-    url('./fonts/icocuz.svg?2r9drd#icocuz') format('svg');
+  src:  url('/cms/common/fonts/icocuz.eot?2r9drd');
+  src:  url('/cms/common/fonts/icocuz.eot?2r9drd#iefix') format('embedded-opentype'),
+    url('/cms/common/fonts/icocuz.ttf?2r9drd') format('truetype'),
+    url('/cms/common/fonts/icocuz.woff?2r9drd') format('woff'),
+    url('/cms/common/fonts/icocuz.svg?2r9drd#icocuz') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'icoserv';
-  src:  url('fonts/icoserv.eot?ega587');
-  src:  url('fonts/icoserv.eot?ega587#iefix') format('embedded-opentype'),
-    url('fonts/icoserv.ttf?ega587') format('truetype'),
-    url('fonts/icoserv.woff?ega587') format('woff'),
-    url('fonts/icoserv.svg?ega587#icoserv') format('svg');
+  src:  url('/cms/common/fonts/icoserv.eot?ega587');
+  src:  url('/cms/common/fonts/icoserv.eot?ega587#iefix') format('embedded-opentype'),
+    url('/cms/common/fonts/icoserv.ttf?ega587') format('truetype'),
+    url('/cms/common/fonts/icoserv.woff?ega587') format('woff'),
+    url('/cms/common/fonts/icoserv.svg?ega587#icoserv') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'lcd';
-  src:  url('./fonts/lcd.eot');
-  src:  url('./fonts/lcd.eot') format('embedded-opentype'),
-    url('./fonts/lcd.ttf') format('truetype'),
-    url('./fonts/lcd.woff') format('woff'),
-    url('./fonts/lcd.svg') format('svg');
+  src:  url('/cms/common/fonts/lcd.eot');
+  src:  url('/cms/common/fonts/lcd.eot') format('embedded-opentype'),
+    url('/cms/common/fonts/lcd.ttf') format('truetype'),
+    url('/cms/common/fonts/lcd.woff') format('woff'),
+    url('/cms/common/fonts/lcd.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +37,6 @@
   -moz-osx-font-smoothing: grayscale;
   font-family: 'lcd' !important;
 }
-
 .icon {
   font-style: normal;
   font-weight: normal;
@@ -52,7 +51,6 @@
 .icon-serv {
   font-family: 'icoserv' !important;
 }
-
 .icon-presentation:before {
   content: "\e00e";
 }
