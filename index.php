@@ -1,5 +1,5 @@
 <?php
-$article_json = '[{"url": "/colorboard/index.php", "title": "调色板丨多种颜色，总有一种是你想要的"}]';
+$article_json = '[{"url": "/colorboard/index.php", "title": "色卡丨多种颜色，总有一种是你想要找的"}]';
 $article_array = json_decode($article_json, TRUE);
 ?>
 <!DOCTYPE html>
