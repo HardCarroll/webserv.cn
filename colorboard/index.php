@@ -15,8 +15,8 @@
       $color_array = json_decode($color_json, TRUE);
       for($col=0; $col<5; $col++) {
         echo '<div class="column">';
-        for($i=0; $col+$i*5<count($color_array); $i++) {
-          $item = $color_array[$col+$i*5];
+        for($row=0; $col+$row*5<count($color_array); $row++) {
+          $item = $color_array[$col+$row*5];
           echo '<div class="item" data-color="'.$item["value"].'"><span class="name">'.$item["name"].'</span><span class="value">'.$item["value"].'</span></div>';
         }
         echo '</div>';

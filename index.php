@@ -35,7 +35,7 @@ $article_array = json_decode($article_json, TRUE);
       <span>world</span>
     </div>
     <div class="footer">
-      <a href="http://www.beian.miit.gov.cn" target="_blank"><img src="/media/images/icp.jpg">湘ICP备18017808号-2</a>
+      <a href="https://beian.miit.gov.cn/" target="_blank"><img src="/media/images/icp.jpg">湘ICP备18017808号-2</a>
     </div>
   </div>
 </body>
