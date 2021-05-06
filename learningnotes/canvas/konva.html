@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konva demo</title>
+  <script src="/library/konva/konva.min.js"></script>
+  <!-- <script src="learnapi.js"></script> -->
+</head>
+<body style="margin: 0;">
+  <div id="stage"></div>
+  <script>
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    var stage = new Konva.Stage({
+      container: "stage",
+      width: width,
+      height: height
+    });
+
+    var layer = new Konva.Layer();
+
+    var rect = new Konva.Rect({
+      x: 100,
+      y: 100,
+      width: 300,
+      height: 300,
+      fill: "orange",
+      cornerRadius: [0, 10, 20, 30],
+      shadowBlur: 20,
+      draggable: true
+    });
+
+    var circle = new Konva.Circle({
+      x: 300,
+      y: 300,
+      radius: 100,
+      fill: "brown",
+      stroke: "black",
+      strokeWidth: 2,
+      shadowBlur: 10,
+      draggable: true
+    });
+
+    var ellipse = new Konva.Ellipse({
+      x: 500,
+      y: 500,
+      radiusX: 100,
+      radiusY: 300,
+      fill: "yellow",
+      stroke: "black",
+      strokeWidth: 2,
+      shadowBlur: 10,
+      draggable: true
+    });
+
+    var wedge = new Konva.Wedge({
+        x: stage.width() / 2,
+        y: stage.height() / 2,
+        radius: 70,
+        angle: 60,
+        fill: 'red',
+        stroke: 'black',
+        strokeWidth: 4,
+        rotation: -120,
+        draggable: true
+    });
+
+    var greenLine = new Konva.Line({
+      points: [5, 70, 140, 23, 250, 60, 300, 20],
+      stroke: 'green',
+      strokeWidth: 2,
+      lineJoin: 'round',
+      dash: [33, 10]
+    });
+
+    layer.add(greenLine);
+    layer.add(wedge);
+    layer.add(ellipse);
+    layer.add(circle);
+    layer.add(rect);
+    stage.add(layer);
+  </script>
+</body>
+</html>
